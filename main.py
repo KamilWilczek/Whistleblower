@@ -21,14 +21,14 @@ load_dotenv(verbose=True)
 
 while True:
 
-    PASSWORD = os.getenv("SYGNALY_MAIL_PASSWORD")  # Password from .env
+    PASSWORD = os.getenv("WHISTLEBLOWER_MAIL_PASSWORD")  # Password from .env
 
     # connect to the server and go to its inbox
     mail = imaplib.IMAP4_SSL(SERVER)
     mail.login(EMAIL, PASSWORD)
     # we choose the inbox but you can select others
     mail.select("inbox")
-    recipient_emails_list = ['wojciech.kulinski@igoriatrade.com', 'jaroslaw.lejko@igoriatrade.com', 'andrzej.zielinski@igoriatrade.com']  # Enter receiver address
+    recipient_emails_list = ['john.smith@gmail.com', 'jan.kowalski@gmail.com', 'alice@gmail.com']  # Enter receiver address
 
     # we'll search using the ALL criteria to retrieve
     # every message inside the inbox
