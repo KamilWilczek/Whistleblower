@@ -1,3 +1,3 @@
-EMAIL = "sygnaly@igoriatrade.com" # Enter your address
-SERVER = "w-trade.home.pl"
+EMAIL = "whistleblower@gmail.com" # Enter your address
+SERVER = "server.name.com"
 PORT = 465 # For SSL
